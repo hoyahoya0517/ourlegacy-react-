@@ -1,0 +1,352 @@
+@media (min-width: 1024px) {
+  a {
+    color: black;
+  }
+  .main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 47px auto 360px;
+    grid-template-areas:
+      "header"
+      "our"
+      "footer";
+    font-family: "Neue Haas Unica", "Arial", sans-serif;
+    letter-spacing: 0em;
+  }
+
+  .header {
+    grid-area: header;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    z-index: 2;
+    background-color: white;
+  }
+  .menu1 {
+    margin-left: calc(100vw / 24);
+  }
+  .menu3 {
+    margin-right: calc(100vw / 24);
+  }
+  .menu3 i {
+    padding-left: 5;
+    margin-left: 10px;
+  }
+
+  /* --------------------------------------------- */
+
+  .center {
+    grid-area: our;
+    display: grid;
+    grid-template-rows: repeat(7, minmax(100px, auto));
+    font-weight: 700;
+    font-size: max(1.2rem, 1.8vw);
+  }
+  .sticky {
+    position: sticky;
+    top: 94.5px;
+    margin-bottom: 40px;
+  }
+
+  .mens .toplogo {
+    margin-bottom: 42px;
+  }
+  .new {
+    font-weight: 400;
+    padding-left: 45px;
+  }
+  .mens {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+
+  .side {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .pic {
+    grid-column-start: 13;
+    grid-column-end: 25;
+  }
+  .pic img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .womens {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .footwear {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .acce {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .workshop {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .thomas {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .seoul {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+
+  /* --------------------------------------------- */
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 50% 18% auto;
+    font-size: 13.5px;
+    font-family: "Neue Haas Unica", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0em;
+  }
+  .etc {
+    display: grid;
+    grid-template-areas:
+      "a b c"
+      "d e f"
+      "g h i";
+    align-items: center;
+    column-gap: calc(100vw / 24);
+  }
+  .runways {
+    grid-area: a;
+  }
+  .terms {
+    grid-area: b;
+  }
+  .newsletter {
+    grid-area: c;
+  }
+  .projects {
+    grid-area: d;
+  }
+  .privacy {
+    grid-area: e;
+  }
+  .careers {
+    grid-area: g;
+  }
+  .faq {
+    grid-area: h;
+  }
+  .etc > div {
+    margin-left: calc(100vw / 24);
+  }
+  .logo img {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+@media (max-width: 1023px) {
+  a {
+    color: black;
+  }
+  .main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 47px auto 340px;
+    grid-template-areas:
+      "header"
+      "our"
+      "footer";
+    font-family: "Neue Haas Unica", "Arial", sans-serif;
+  }
+
+  .header {
+    grid-area: header;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    z-index: 2;
+    background-color: white;
+  }
+  .menu1 {
+    margin-left: calc(100vw / 24);
+  }
+  .menu3 {
+    margin-right: calc(100vw / 24);
+  }
+  .menu3 i {
+    padding-left: 5;
+    margin-left: 10px;
+  }
+
+  /* --------------------------------------------- */
+
+  .center {
+    grid-area: our;
+    display: grid;
+    grid-template-rows: repeat(7, minmax(100px, auto));
+    font-weight: 700;
+    font-size: max(1.2rem, 1.8vw);
+  }
+  .sticky {
+    position: sticky;
+    top: 96.5px;
+    margin-bottom: 40px;
+  }
+
+  .mens .toplogo {
+    margin-bottom: 42px;
+  }
+  .new {
+    font-weight: 400;
+    padding-left: 45px;
+  }
+  .mens {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-rows: 290px auto;
+  }
+  .side {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: calc(100vw / 24);
+    padding-right: calc(100vw / 24);
+  }
+
+  .pic {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .pic img {
+    width: 96%;
+    float: right;
+  }
+  .womens {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin-top: 120px;
+  }
+  .footwear {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin-top: 120px;
+  }
+  .acce {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin-top: 120px;
+  }
+  .workshop {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin-top: 120px;
+  }
+  .thomas {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin-top: 120px;
+  }
+  .seoul {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin-top: 120px;
+  }
+
+  /* --------------------------------------------- */
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 40% 35% auto;
+    font-size: 13.5px;
+    font-family: "Neue Haas Unica", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0em;
+  }
+  .etc {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+    align-items: center;
+  }
+  .runways {
+    grid-area: a;
+  }
+  .terms {
+    grid-area: b;
+  }
+  .newsletter {
+    margin-top: 30px;
+    grid-area: g;
+  }
+  .projects {
+    grid-area: c;
+  }
+  .privacy {
+    grid-area: d;
+  }
+  .careers {
+    grid-area: e;
+  }
+  .faq {
+    grid-area: f;
+  }
+  .etc > div {
+    margin-left: calc(100vw / 24);
+  }
+  .logo {
+    margin-top: 17px;
+  }
+  .logo img {
+    width: 100%;
+  }
+}

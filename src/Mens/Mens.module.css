@@ -1,0 +1,160 @@
+@media (min-width: 1024px) {
+  a {
+    color: black;
+  }
+  .main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 47px auto 535px 360px;
+    grid-template-areas:
+      "header"
+      "our"
+      "explore"
+      "footer";
+    font-family: "Neue Haas Unica", "Arial", sans-serif;
+  }
+
+  .header {
+    grid-area: header;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    z-index: 2;
+    background-color: white;
+  }
+  .menu1 {
+    margin-left: calc(100vw / 24);
+  }
+  .menu3 {
+    margin-right: calc(100vw / 24);
+  }
+  .menu3 i {
+    padding-left: 5;
+    margin-left: 10px;
+  }
+
+  /* --------------------------------------------- */
+
+  .center {
+    grid-area: our;
+    font-weight: 700;
+    font-size: max(1.2rem, 1.8vw);
+    letter-spacing: 0em;
+  }
+  .mens {
+    display: grid;
+    grid-template-columns: 8fr 14fr;
+    margin-top: 47px;
+    padding-left: calc(100vw / 24);
+    grid-gap: calc(100vw / 24);
+  }
+  .side {
+  }
+  .sticky {
+  }
+  .cate {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.84375rem;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0em;
+    margin-top: calc(100vw / 34);
+    position: sticky;
+    top: calc(47px + (100vw / 34));
+  }
+
+  .cate a {
+    margin-top: 4px;
+    color: rgb(107, 107, 107);
+  }
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+  }
+  .pic img {
+    width: 100%;
+  }
+  .detail {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+  }
+  .detail_nameOn {
+    font-size: 0.8125rem;
+    font-weight: 400;
+  }
+  .detail_nameOff {
+    font-size: 0.8125rem;
+  }
+  .detail_price {
+    font-weight: 400;
+    font-size: 0.84375rem;
+    margin-top: 2px;
+    text-transform: uppercase; /*대문자*/
+  }
+
+  /* --------------------------------------------- */
+  .explore {
+    grid-area: explore;
+  }
+
+  /* --------------------------------------------- */
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 50% 18% auto;
+    font-size: 13.5px;
+    font-family: "Neue Haas Unica", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0em;
+  }
+  .etc {
+    display: grid;
+    grid-template-areas:
+      "a b c"
+      "d e f"
+      "g h i";
+    align-items: center;
+    column-gap: calc(100vw / 24);
+  }
+  .runways {
+    grid-area: a;
+  }
+  .terms {
+    grid-area: b;
+  }
+  .newsletter {
+    grid-area: c;
+  }
+  .projects {
+    grid-area: d;
+  }
+  .privacy {
+    grid-area: e;
+  }
+  .careers {
+    grid-area: g;
+  }
+  .faq {
+    grid-area: h;
+  }
+  .etc > div {
+    margin-left: calc(100vw / 24);
+  }
+  .logo img {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
