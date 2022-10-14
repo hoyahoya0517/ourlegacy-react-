@@ -6,6 +6,7 @@ import Mens_product from "./Mens_product";
 
 function Mens() {
   const testarr = ["test1", "test2"];
+  const [hidden, setHidden] = useState(true);
   const [sql, setSql] = useState("");
   const getSql = () => {
     fetch("http://localhost:3001/mens")
@@ -18,11 +19,18 @@ function Mens() {
     getSql();
   }, []);
 
+  const onOff = () => {
+    setHidden(false);
+  };
+  const offOn = () => {
+    setHidden(true);
+  };
+
   return (
     <div>
       <div className={styles.main}>
         <div className={styles.header}>
-          <div className={styles.menu1}>
+          <div className={styles.menu1} onClick={onOff}>
             <i className="bi bi-justify" style={{ fontSize: 27 }}></i>
           </div>
           <div className={styles.menu2}></div>
@@ -69,7 +77,7 @@ function Mens() {
           </div>
         </div>
 
-        <div className={styles.explore}>ss</div>
+        <div className={styles.explore}></div>
 
         <div className={styles.footer}>
           <div className={styles.empty2}></div>
@@ -83,8 +91,50 @@ function Mens() {
             <div className={styles.faq}>FAQ</div>
           </div>
           <div className={styles.logo}>
-            <img src="./img/logo2.jpg" />
+            <Link to={"/"}>
+              <img src="./img/logo2.jpg" />
+            </Link>
           </div>
+        </div>
+
+        <div className={hidden ? styles.hidden : styles.sidemenu}>
+          <div className={styles.xbar}>
+            <div className={styles.xbar_button} onClick={offOn}>
+              <i class="bi bi-x-lg" style={{ fontSize: 25 }}></i>
+            </div>
+          </div>
+          <div className={styles.xmenu}>
+            <div className={styles.xmenu_side}>
+              <div className={styles.xmenu_sidemenu}>
+                <div className={styles.xmenu_toplogo} onClick={offOn}>
+                  <h1>OUR LEGACY</h1>
+                </div>
+                <div className={styles.content}>
+                  <Link to={"/mens"}>
+                    <h1>MENS</h1>
+                  </Link>
+                  <h1>WOMENS</h1>
+                  <h1>FOOTWEAR</h1>
+                  <h1>ACCESSORIES</h1>
+                  <h1>WORK SHOP</h1>
+                </div>
+              </div>
+              <div className={styles.xmenu_sidefoot}>
+                <div className={styles.xmenu_runways}>Shipping & Return</div>
+                <div className={styles.xmenu_runways}>Runways</div>
+                <div className={styles.xmenu_info}>Info</div>
+                <div className={styles.xmenu_projects}>Projects</div>
+                <div className={styles.xmenu_contact}>Contact</div>
+                <div className={styles.xmenu_stores}>Stores</div>
+                <div className={styles.xmenu_careers}>Careers</div>
+              </div>
+            </div>
+
+            <div className={styles.xmenu_pic}>
+              <img src="./img/xmenu.jpg"></img>
+            </div>
+          </div>
+          <div className={styles.xbottom}></div>
         </div>
       </div>
     </div>

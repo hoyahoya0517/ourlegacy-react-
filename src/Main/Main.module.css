@@ -28,6 +28,9 @@
   .menu1 {
     margin-left: calc(100vw / 24);
   }
+  .menu1:hover {
+    cursor: pointer;
+  }
   .menu3 {
     margin-right: calc(100vw / 24);
   }
@@ -162,6 +165,63 @@
   .logo img {
     width: 100%;
   }
+  .hidden {
+    visibility: hidden;
+  }
+
+  .sidemenu {
+    position: fixed;
+    z-index: 1200;
+    min-height: 100vh;
+    inset: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .xbar {
+    display: flex;
+    align-items: center;
+    margin-left: calc(100vw / 24);
+    min-height: 47px;
+  }
+  .xbar_button:hover {
+    cursor: pointer;
+  }
+  .xmenu {
+    margin-top: 47px;
+    margin-left: calc(100vw / 24);
+    margin-right: calc(100vw / 24);
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    font-weight: 700;
+    font-size: max(1.2rem, 1.8vw);
+  }
+  .xmenu_toplogo:hover {
+    cursor: pointer;
+  }
+  .xmenu_side {
+    grid-column-start: 1;
+    grid-column-end: 11;
+  }
+  .xmenu_pic {
+    grid-column-start: 13;
+    grid-column-end: 20;
+  }
+  .xmenu_pic img {
+    width: 100%;
+  }
+  .xmenu_sidefoot {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+    font-size: 0.84375rem;
+    line-height: 1.35;
+  }
 }
 
 /* ------------------------------------------------ */
@@ -223,7 +283,7 @@
   }
   .sticky {
     position: sticky;
-    top: 96.5px;
+    top: 93.5px;
     margin-bottom: 40px;
   }
 
@@ -348,5 +408,51 @@
   }
   .logo img {
     width: 100%;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .sidemenu {
+    position: fixed;
+    z-index: 1200;
+    min-height: 100vh;
+    inset: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .xbar {
+    display: flex;
+    align-items: center;
+    margin-left: calc(100vw / 24);
+    min-height: 47px;
+  }
+  .xbar_button:hover {
+    cursor: pointer;
+  }
+  .xmenu {
+    margin-top: 47px;
+    margin-left: calc(100vw / 24);
+    margin-right: calc(100vw / 24);
+    display: grid;
+
+    font-weight: 700;
+    font-size: max(1.2rem, 1.8vw);
+  }
+  .xmenu_toplogo:hover {
+    cursor: pointer;
+  }
+
+  .xmenu_pic img {
+    width: 0%;
+  }
+  .xmenu_sidefoot {
+    margin-top: 40px;
+    font-size: 0.84375rem;
+    line-height: 1.35;
+  }
+  .xmenu_sidefoot > div {
+    margin-bottom: 4.5px;
   }
 }

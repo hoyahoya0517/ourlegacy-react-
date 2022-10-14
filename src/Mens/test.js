@@ -35,6 +35,33 @@ function Mens() {
       });
   }
 
+  /* -------------------------------------------------- */
+  // const [text, setText] = useState("");
+  // const [sql, setSql] = useState("");
+  // const handleText = (e) => {
+  //   setText(e.target.value);
+  // };
+  // const send = (e) => {
+  //   e.preventDefault();
+  //   const good = {
+  //     data: `${text}`,
+  //   };
+  //   console.log(good);
+  //   fetch("http://localhost:3001/send", {
+  //     method: "post", // 통신방법
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //     body: JSON.stringify(good),
+  //   })
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((json) => {
+  //       console.log(json);
+  //     });
+  // };
+
   return (
     <div>
       <input onChange={handleChange} name="id" />
